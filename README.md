@@ -1,22 +1,22 @@
 # README
 
 ## groupsテーブル
-
 |Column|Type|Options|
 |------|----|-------|
-|group_id|integer|null: false, foreign_key: true|
+|name|string|null: false|
 
 ### Association
 has_many :users, through: :groups_users
+belongs_to :messages
 
 ## usersテーブル
-
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
+|name|string|null: false|
 
 ### Association
-has_many :groups, through: :groups_users
+has_many :users, through: :groups_users
+belongs_to :messages
 
 ## groups_usersテーブル
 
@@ -35,8 +35,8 @@ belongs_to :group
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-|date_id|datetime|null: false, foreign_key: true|
-|message_id|text|null: false, foreign_key: true|
+|text|string|null: false, foreign_key: true|
+|image|text|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
