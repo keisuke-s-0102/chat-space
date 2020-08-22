@@ -39,8 +39,8 @@
     padding: 46px 40px 0;
     height: calc(100vh - 100px - 90px);
     overflow: scroll;
-    .message {
-      .upper-message {
+    .MessageBox {
+      .MessageInfo {
         display: flex;
         &__user-name {
           color: #434a54;
@@ -53,7 +53,7 @@
           padding-left: 10px;
         }
       }
-      .lower-message {
+      .Message {
         margin-top: 10px;
         &__content {
           color: #434a54;
