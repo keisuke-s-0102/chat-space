@@ -78,8 +78,14 @@
     &__inputContent {
       border: none;
       height: 50px;
+      width: 700px;
+      position: relative;
+      padding: 0 45px 0 15px;
+    }
+    &__inputImage {
+      height: 50px;
       position: absolute;
-      right: 180px;
+      right: 210px;
       bottom: 20px;
     }
     &__icon {
