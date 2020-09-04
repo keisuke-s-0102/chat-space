@@ -69,26 +69,33 @@
     box-sizing: border-box;
     height: 90px;
     padding: 20px 50px 20px 40px;
-    &__message {
+    &__contents {
       border: none;
       float: left;
       height: 50px;
       width: calc(100% - 150px);
     }
-    &__mask {
-      background-color: $white;
-      float: left;
+    &__inputContent {
+      border: none;
       height: 50px;
-      padding-right: 10px;
-      &__image {
-        font-size: 20px;
-        line-height: 50px;
-      }
-      .hidden {
-        display: none;
-      }
+      width: 100%;
+      padding: 0 45px 0 15px;
+    }  
+    &__inputImage {
+      height: 50px;
+      position: absolute;
+      right: 10px;
     }
-    &__submit {
+    &__icon {
+      line-height: 50px;
+      font-size: 25px;
+    }
+    .Hidden {
+      display: none;
+    }
+  }
+    
+    .submit {
       background-color: $light_blue;
       border: none;
       color: $white;
@@ -98,5 +105,4 @@
       margin-left: 15px;
       padding: 0 30px;
     }
-  }
 }
