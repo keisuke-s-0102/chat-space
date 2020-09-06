@@ -74,19 +74,19 @@
       float: left;
       height: 50px;
       width: calc(100% - 150px);
+      position: relative;
     }
     &__inputContent {
       border: none;
       height: 50px;
-      width: 700px;
-      position: relative;
+      width: calc(100% - 25px);
       padding: 0 45px 0 15px;
     }
     &__inputImage {
       height: 50px;
       position: absolute;
-      right: 210px;
-      bottom: 20px;
+      right: 1px;
+      bottom: 1px;
     }
     &__icon {
       line-height: 50px;
